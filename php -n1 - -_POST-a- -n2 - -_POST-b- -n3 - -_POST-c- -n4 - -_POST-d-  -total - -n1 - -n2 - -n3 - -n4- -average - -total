@@ -1,0 +1,22 @@
+<?php
+$n1 = $_POST["a"];
+$n2 = $_POST["b"];
+$n3 = $_POST["c"];
+$n4 = $_POST["d"];
+
+$total = $n1 + $n2 + $n3 + $n4;
+$average = $total / 4;
+$status = $average;
+
+echo "Total:" . $total . "<br>";
+echo "Average: " . $average;
+echo "<br>";
+if($average < 75){
+echo "Failed";
+}
+
+else{
+echo "Passed";
+}
+
+?>
